@@ -4,27 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Defensoria Pública de Minas Gerais — Demo</title>
-    <meta name="description" content="Demo visual inspirada no portal da Defensoria Pública de Minas Gerais" />
+    <meta name="description" content="Demo inspirada no portal da Defensoria Pública de Minas Gerais" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="demo-banner">⚠️ DEMO NÃO OFICIAL — Layout recriado para demonstração visual.</div>
+    <div class="demo-banner">⚠️ DEMO NÃO OFICIAL — reprodução visual para apresentação.</div>
 
-    <header class="top-header">
-      <div class="container utility">
-        <div class="utility-left">A<sup>-</sup> A<sup>+</sup> • Contraste • Libras</div>
-        <div class="utility-center">sei! &nbsp; cerás &nbsp; solar</div>
-        <div class="utility-right">
-          <input type="text" placeholder="O que você procura?" aria-label="Busca" />
-        </div>
+    <header class="header">
+      <div class="container utility-bar">
+        <div>A- A+ • Contraste • Libras</div>
+        <div class="gov-links" aria-label="Logos institucionais"></div>
+        <div><input type="search" placeholder="O que você procura?" aria-label="Busca" /></div>
       </div>
-      <div class="container nav-row">
-        <a class="logo" href="#">
-          <span class="logo-circle">⚖</span>
-          <span>DEFENSORIA PÚBLICA<br />DO ESTADO DE MINAS GERAIS</span>
+      <div class="container nav-bar">
+        <a href="#" class="logo">
+          <img class="logo-icon-img" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Timpre_DP.png" alt="Logo da Defensoria Pública de Minas Gerais" />
+          <span class="logo-text">Defensoria Pública<br />do Estado de Minas Gerais</span>
         </a>
         <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
         <nav id="mainMenu" class="menu">
@@ -40,137 +38,109 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero">
         <div class="container">
           <h1>A Defensoria Pública de Minas Gerais mais perto de você!</h1>
-          <div class="service-cards">
-            <article class="service-card">
+          <div class="hero-cards">
+            <article class="hero-card">
               <h3>Conheça nossos serviços</h3>
-              <p>Saiba as áreas de atuação e como a DPMG pode te ajudar.</p>
+              <p>Saiba as áreas de atuação e como a DPMG pode ajudar.</p>
               <a href="#">Conhecer as Atuações</a>
             </article>
-            <article class="service-card">
+            <article class="hero-card">
               <h3>Quem pode ser atendido</h3>
               <p>Conheça os critérios para solicitar atendimento.</p>
               <a href="#">Conhecer os Critérios</a>
             </article>
-            <article class="service-card">
+            <article class="hero-card">
               <h3>Documentos para atendimento</h3>
               <p>Relação de documentos necessários por tipo de atuação.</p>
               <a href="#">Verificar Documentos</a>
             </article>
-            <article class="service-card featured">
+            <article class="hero-card featured">
               <h3>Quero ser atendido</h3>
               <p>Orientações sobre as formas de atendimento disponíveis.</p>
               <a href="#">Quero Atendimento</a>
             </article>
           </div>
 
-          <div class="main-banner">
-            <img id="heroImage" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80" alt="Banner da campanha" />
-            <div class="banner-caption">
+          <div class="banner">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80" alt="Banner principal" />
+            <div class="banner-overlay">
               <h3>Território e Pertencimento</h3>
-              <p>Ações itinerantes para comunidades tradicionais e população em situação de vulnerabilidade.</p>
+              <p>Ações itinerantes para facilitar o acesso gratuito à justiça.</p>
               <button>Mais informações</button>
-            </div>
-            <div class="dots">
-              <span class="dot active" data-img="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80"></span>
-              <span class="dot" data-img="https://images.unsplash.com/photo-1469571486292-b53601020f90?auto=format&fit=crop&w=1600&q=80"></span>
-              <span class="dot" data-img="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80"></span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="container section-gap">
+      <section class="container section">
         <h2>Acesso rápido</h2>
         <div class="quick-grid">
           <article class="quick-highlight">
-            <div class="mini-logo">DPMG</div>
+            <img class="seal-img" src="https://upload.wikimedia.org/wikipedia/commons/4/41/Timpre_DP.png" alt="Logo DPMG" />
             <h4>Defensoria Itinerante</h4>
-            <p>Programa que percorre diversas regiões oferecendo atendimento em áreas de Família, Saúde, Direitos Humanos e mais.</p>
+            <p>Programa de atendimento em diversas regiões do estado.</p>
           </article>
-          <a class="quick-item" href="#">Estágios DPMG | CESV</a>
-          <a class="quick-item" href="#">Concursos</a>
-          <a class="quick-item" href="#">Escola Superior | ESDEP</a>
-          <a class="quick-item" href="#">LGPD</a>
-          <a class="quick-item" href="#">Diário Oficial</a>
-          <a class="quick-item" href="#">Validar Documentos</a>
-          <a class="quick-item" href="#">ConsigWeb-MG | Seplag</a>
-          <a class="quick-item" href="#">Recadastra aposentados</a>
-          <a class="quick-item" href="#">Ouvidoria</a>
+          <a class="quick-link" href="#">Estágios DPMG | CESV</a>
+          <a class="quick-link" href="#">Concursos</a>
+          <a class="quick-link" href="#">Escola Superior | ESDEP</a>
+          <a class="quick-link" href="#">LGPD</a>
+          <a class="quick-link" href="#">Diário Oficial</a>
+          <a class="quick-link" href="#">Validar Documentos</a>
+          <a class="quick-link" href="#">ConsigWeb-MG | Seplag</a>
+          <a class="quick-link" href="#">Recadastra aposentados</a>
+          <a class="quick-link" href="#">Ouvidoria</a>
         </div>
       </section>
 
-      <section class="container section-gap">
+      <section class="container section">
         <h2>Notícias</h2>
-        <div class="cards4">
-          <article class="post-card">
-            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80" alt="Notícia" />
-            <small>INSTITUCIONAL • POSSE • NOTÍCIAS</small>
-            <h3>Defensoria Pública de Minas Gerais empossa primeiro ouvidor-geral</h3>
-            <a href="#">Acessar notícia</a>
-          </article>
-          <article class="post-card">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Notícia" />
-            <small>INSTITUCIONAL • POSSE • NOTÍCIAS</small>
-            <h3>Cerimônia marca novo ciclo institucional e atuação estratégica</h3>
-            <a href="#">Acessar notícia</a>
-          </article>
-          <article class="post-card">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Notícia" />
-            <small>NOTÍCIAS</small>
-            <h3>DPMG sedia encerramento de especialização pioneira</h3>
-            <a href="#">Acessar notícia</a>
-          </article>
-          <article class="post-card">
-            <img src="https://images.unsplash.com/photo-1469571486292-b53601020f90?auto=format&fit=crop&w=900&q=80" alt="Notícia" />
-            <small>NOTÍCIAS</small>
-            <h3>DPMG dará posse ao primeiro ouvidor-geral da instituição</h3>
-            <a href="#">Acessar notícia</a>
-          </article>
+        <div class="card-grid">
+          <article class="content-card"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80" alt="Notícia" /><div><small>INSTITUCIONAL</small><h3>DPMG empossa primeiro ouvidor-geral</h3><a href="#">Acessar notícia</a></div></article>
+          <article class="content-card"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Notícia" /><div><small>POSSE</small><h3>Cerimônia marca novo ciclo institucional</h3><a href="#">Acessar notícia</a></div></article>
+          <article class="content-card"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Notícia" /><div><small>NOTÍCIAS</small><h3>DPMG sedia encerramento de especialização</h3><a href="#">Acessar notícia</a></div></article>
+          <article class="content-card"><img src="https://images.unsplash.com/photo-1469571486292-b53601020f90?auto=format&fit=crop&w=900&q=80" alt="Notícia" /><div><small>NOTÍCIAS</small><h3>Posse do primeiro ouvidor-geral da Instituição</h3><a href="#">Acessar notícia</a></div></article>
         </div>
       </section>
 
-      <section class="container section-gap">
+      <section class="container section">
         <h2>Cursos e Eventos</h2>
-        <div class="cards4 events">
-          <article class="event-card"><img src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=900&q=80" alt="Curso" /><p>Defensoria Pública de Minas Gerais abre inscrições para curso...</p></article>
-          <article class="event-card"><img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=80" alt="Curso" /><p>Defensoria Pública de Minas Gerais abre inscrições para terceira...</p></article>
-          <article class="event-card"><img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?auto=format&fit=crop&w=900&q=80" alt="Evento" /><p>Prorrogadas as inscrições para mutirão de conversão de união estável...</p></article>
-          <article class="event-card"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=80" alt="Curso" /><p>DPMG promove segunda turma do programa Mulheres em Foco...</p></article>
+        <div class="card-grid events">
+          <article class="event-card"><img src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=900&q=80" alt="Curso" /><p>Inscrições para curso popular abertas.</p></article>
+          <article class="event-card"><img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=80" alt="Curso" /><p>Curso de reconstrução: novas turmas.</p></article>
+          <article class="event-card"><img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?auto=format&fit=crop&w=900&q=80" alt="Evento" /><p>Mutirão de conversão de união estável.</p></article>
+          <article class="event-card"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=80" alt="Curso" /><p>Programa Mulheres em Foco: segunda turma.</p></article>
         </div>
       </section>
 
-      <section class="tv-section">
+      <section class="tv">
         <div class="container tv-grid">
-          <div>
+          <article class="video-main">
             <h2>TV Defensoria</h2>
-            <div class="video-main">
-              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1300&q=80" alt="Video principal" />
-              <p>DPMG consegue primeira retificação de nome e gênero de pessoa não-binária em MG</p>
-            </div>
-          </div>
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1300&q=80" alt="TV Defensoria" />
+            <p>DPMG consegue primeira retificação de nome e gênero de pessoa não-binária em MG</p>
+          </article>
           <aside class="video-list">
             <a href="#">Família e direitos das crianças e adolescentes</a>
-            <a href="#">Resolução extrajudicial | Conciliação e mediação</a>
-            <a href="#">Fala Comigo | Tira-dúvidas sobre divisão de bens</a>
-            <a href="#">Uma paixão e uma missão | Setembro Verde</a>
+            <a href="#">Resolução extrajudicial e mediação</a>
+            <a href="#">Fala Comigo: divisão de bens</a>
+            <a href="#">Setembro Verde</a>
             <a href="#">Coordenadoria de Estágio e Serviço Voluntário</a>
           </aside>
         </div>
       </section>
     </main>
 
-    <footer class="footer" id="contato">
+    <footer class="footer">
       <div class="container">
-        <h3>Acompanhe nossas ações e serviços!</h3>
-        <p>Este site é uma <strong>demo</strong> e não substitui o portal oficial da Defensoria Pública de Minas Gerais.</p>
+        <h3>Acompanhe nossas ações e serviços</h3>
+        <p>Esta página é uma <strong>demo</strong> e não substitui o portal oficial da DPMG.</p>
       </div>
     </footer>
 
     <script src="script.js"></script>
-
     <!-- Start of defensoriamg-demo Zendesk Widget script -->
     <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=82545b53-46b2-4231-a5f7-0d77440dd00a"> </script>
     <!-- End of defensoriamg-demo Zendesk Widget script -->
